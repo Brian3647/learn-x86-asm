@@ -2,7 +2,7 @@ global _start ; entry point _stat
 
 section .data ; data
 	msg db "Hello", 0x0a ; asign msg var "Hello" + 0x0a (newline)
-	len equ $ - msg ; asign len var msg lenght
+	len equ $ - msg ; asign len var msg length
 section .text ; code
 _start: ; entry point (main function)
 	mov eax, 4 ; sys_write system call
